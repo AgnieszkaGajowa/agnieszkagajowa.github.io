@@ -1,8 +1,31 @@
 <html>
 <head>
+    <style>
+        //filling 90% of screen width while maintaining aspect ratio, as described in http://stackoverflow.com/a/20593342
+        * {
+        margin: 0;
+        padding: 0;
+        }
+
+        .panorama {
+        width: 90vw;
+        /* 90% of viewport vidth */
+        height: 50.625vw;
+        /* ratio = 9/16 * 90 = 50.625 */
+        max-height: 90vh;
+        max-width: 160vh;
+        /* 16/9 * 90 = 160 */
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        }
+    </style>
 </head>
 <body>
-<iframe title="pannellum panorama viewer" width="1024" height="768" allowfullscreen
+<iframe class='panorama' title="pannellum panorama viewer" width="1024" height="768" allowfullscreen
         style="border-style:none;"
         src="./pannellum/standalone/pannellum.htm?autoLoad=true&amp;config=../../projekt_wnetrz_dom_w_jozefowie.json"></iframe>
 </body>
