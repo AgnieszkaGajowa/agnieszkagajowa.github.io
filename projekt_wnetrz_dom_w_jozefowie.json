@@ -1,0 +1,60 @@
+{
+  "default": {
+    "author": "Agnieszka Gajowa",
+    "title": "Projekt wnętrz - dom w Józefowie",
+    "firstScene": "living_room",
+    "hfov": 120
+  },
+  "scenes": {
+    "living_room": {
+      "panorama": "panorama_1.jpg",
+      "yaw": -240,
+      "hotSpots": [
+        {
+          "pitch": 0,
+          "yaw": -220,
+          "type": "scene",
+          "text": "Jadalnia",
+          "sceneId": "dinning_room",
+          "targetYaw":-10
+        }
+      ]
+    },
+    "dinning_room": {
+      "title": "Jadalnia",
+      "panorama": "panorama_2.jpg",
+      "hotSpots": [
+        {
+          "pitch": 0,
+          "yaw": 325,
+          "type": "scene",
+          "text": "Salon",
+          "sceneId": "living_room",
+          "targetYaw":-240
+        },
+        {
+          "pitch": 0,
+          "yaw": 150,
+          "type": "scene",
+          "text": "Kucbnia",
+          "sceneId": "kitchen",
+          "targetYaw":-30
+        }
+      ]
+    },
+    "kitchen": {
+      "title": "Kuchnia",
+      "panorama": "panorama_3.jpg",
+      "hotSpots": [
+        {
+          "pitch": 0,
+          "yaw": 325,
+          "type": "scene",
+          "text": "Jadalnia",
+          "sceneId": "dinning_room",
+          "targetYaw":-10
+        }
+      ]
+    }
+  }
+}
