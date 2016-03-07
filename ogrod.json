@@ -1,0 +1,40 @@
+{
+  "default": {
+    "author": "Agnieszka Gajowa",
+    "firstScene": "back_yard",
+    "hfov": 120,
+    "yaw": -33
+  },
+  "scenes": {
+    "front_yard": {
+      "title": "Projekt ogrodu - front",
+      "panorama": "ogrod_1.jpg",
+      "hotSpots": [
+        {
+          "pitch": 0,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Tył ogrodu",
+          "sceneId": "back_yard",
+          "targetPitch":0,
+          "targetYaw":0
+        }
+      ]
+    },
+    "back_yard": {
+      "title": "Projekt ogrodu - tył",
+      "panorama": "ogrod_2.jpg",
+      "hotSpots": [
+        {
+          "pitch": 0,
+          "yaw": -30,
+          "type": "scene",
+          "text": "Front ogrodu",
+          "sceneId": "front_yard",
+          "targetPitch":0,
+          "targetYaw":15
+        }
+      ]
+    }
+  }
+}
