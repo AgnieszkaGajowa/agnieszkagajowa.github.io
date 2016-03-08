@@ -36,6 +36,14 @@ h6 {
     font-weight: 700;
 }
 
+hr {
+    border-color: #2c3e50
+}
+
+.navy hr {
+    border-color: #fff
+}
+
 hr.star-light,
 hr.star-primary {
     margin: 25px auto 30px;
@@ -68,6 +76,10 @@ hr.star-light:after {
 
 hr.star-primary {
     border-color: #2c3e50;
+}
+
+.navy hr.star-primary {
+    border-color: #fff;
 }
 
 hr.star-primary:after {
@@ -126,6 +138,10 @@ header .intro-text .skills {
     header .intro-text .skills {
         font-size: 1.75em;
     }
+}
+
+.header {
+    padding-top: 200px;
 }
 
 @media(min-width:768px) {
